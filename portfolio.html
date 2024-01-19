@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Joshua Mathieson - Portfolio</title>
+
+    <meta name="author" content="Joshua Mathieson">
+    <meta name="description" content="This is the 'Portfolio' page. This page contains an image gallery with projects I have made/worked on.">
+    <meta name="keywords" content="Portfolio, 3D Models, 3D, Programming, Game Development, Projects">
+
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header-image">
+
+            <img src="images/logo.png" alt="">
+            <h1>Joshua Mathieson</h1>
+
+            <!-- Hamburger -->
+            <div id="hamburger-menu">
+
+                <div></div>
+                <div></div>
+                <div></div>
+
+            </div>
+
+        </div>
+
+        <nav id="nav-container">
+
+            <a href="index.html">About</a>
+            <a href="facts.html">Fun Facts</a>
+            <a href="portfolio.html" id="PageLink">Portfolio</a>
+            <a href="resume.html">Resume</a>
+
+        </nav>
+
+    </header>
+
+    <hr>
+
+        <div class="hero-container" id="Hero">
+            <h2>Portfolio</h2>
+        </div>
+
+    <hr>
+
+    <main>
+
+        <div class="image-gallery-container">
+
+            <img src="#" alt="#" id="imageGallery-ImageDisplay">
+
+            <video controls id="imageGallery-VideoDisplay" src="#"></video>
+
+            <div id="imageGallery-currentImagePosition"></div>
+
+            <div class="image-gallery-buttons">
+
+                <button id="image-gallery-LeftButton" value="left button" onclick="updateImageGallery('Left')" onmousedown="galleryButtonVisual('Left','Down')" onmouseleave="galleryButtonVisual('Left','Up')"> &lt; </button>
+                <button id="image-gallery-RightButton" value="right button" onclick="updateImageGallery('Right')" onmousedown="galleryButtonVisual('Right','Down')" onmouseleave="galleryButtonVisual('Right','Up')"> &gt; </button>
+
+            </div>
+
+            <section>
+
+                <h3 id="imageGallery-ImageName">Image Name</h3>
+                <p id="imageGallery-ImageDescription"> Image Description</p>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <hr>
+        <address>
+
+            Joshua Mathieson &copy; 2023 <br>
+            802 - 881 - 9085 <br>
+        
+        </address> 
+        <hr>
+    </footer>
+
+</body>
+
+</html>
